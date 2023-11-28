@@ -1,4 +1,3 @@
-
 'use client';
 import { FC, useState } from 'react';
 import { useTranslations } from 'next-intl';
@@ -18,19 +17,18 @@ import { EmailIcon } from 'components/icons/EmailIcon';
 import { AchiveIcon } from 'components/icons/AchiveIcon';
 import { Achievement, Achievements } from 'components/common/Acievments';
 
-
 interface SellerProfileProps {}
 
 const tabs: ITab[] = [
-  { name: 'Seller Profile', filter: 'tab1' },
-  { name: 'Offers', filter: 'tab2' },
-  { name: 'Payments', filter: 'tab3' },
-  { name: 'Achievements', filter: 'tab4' },
-  { name: 'Bought Products', filter: 'tab5' },
+  { name: 'Профіль продавця', filter: 'tab1' },
+  { name: 'Пропозиції', filter: 'tab2' },
+  { name: 'Платежі', filter: 'tab3' },
+  { name: 'Досягнення', filter: 'tab4' },
+  { name: 'Куплені товари', filter: 'tab5' },
 ];
 
 export const Seller: FC<SellerProfileProps> = () => {
-  const [selectedTab, setSelectedTab] = useState('tab1'); 
+  const [selectedTab, setSelectedTab] = useState('tab1');
   const t = useTranslations('SellerPage');
 
   const renderContent = () => {
@@ -57,7 +55,7 @@ export const Seller: FC<SellerProfileProps> = () => {
   };
 
   const testUser: IUser = {
-    achievements: ['First Achievement', 'Second Achievement'],
+    achievements: ['Перше досягнення', 'Друге досягнення'],
     avatarURL: 'https://img.freepik.com/free-psd/3d-illustration-of-person-with-glasses_23-2149436191.jpg?w=740&t=st=1701180174~exp=1701180774~hmac=04eaa765aa40c518fc1997823c735cbf92668b3d8d5ea320a12cbc769e8a8724',
     backgroundColor: '#ffffff',
     banned: false,
@@ -73,16 +71,16 @@ export const Seller: FC<SellerProfileProps> = () => {
     role: EnumRoles.SELLER,
     stripeId: 'stripe123',
     subscribed: true,
-    userName: 'Lois Lane',
+    userName: 'Лоїс Лейн',
   };
 
   const achievementsData = [
     {
       id: 1,
-      name: 'Achievement 1',
-      criteria: ['Criteria 1', 'Criteria 2'],
+      name: 'Досягнення 1',
+      criteria: ['Критерій 1', 'Критерій 2'],
     },
-  ]
+  ];
 
   return (
     <Section>

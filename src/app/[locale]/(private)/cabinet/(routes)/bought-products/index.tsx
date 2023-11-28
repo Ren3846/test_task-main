@@ -25,23 +25,23 @@ export const BoughtProducts: FC = () => {
           avatarURL: 'example-avatar.jpg',
           userName: 'JaneDoe',
         },
-        text: 'This is a test review. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        text: 'Це тестовий відгук. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         updatedAt: '2023-01-02T14:30:00',
       };
 
       const types = [
-        { title: 'Type 1', name: 'Value 1' },
-        { title: 'Type 2', name: 'Value 2' },
+        { title: 'Тип 1', name: 'Значення 1' },
+        { title: 'Тип 2', name: 'Значення 2' },
       ];
     
       const blocks = [
-        { title: 'Block 1', name: 'Value 1' },
-        { title: 'Block 2', name: 'Value 2' },
+        { title: 'Блок 1', name: 'Значення 1' },
+        { title: 'Блок 2', name: 'Значення 2' },
       ];
     
       const instruction = {
-        title: 'Instructions',
-        list: ['Step 1: Do something', 'Step 2: Do something else', 'Step 3: Finish'],
+        title: 'Інструкції',
+        list: ['Крок 1: Зробити щось', 'Крок 2: Зробити ще щось', 'Крок 3: Завершити'],
       };
 
     return (
@@ -85,4 +85,4 @@ export const BoughtProducts: FC = () => {
   );
 };
 
-export default BoughtProducts
+export default BoughtProducts;

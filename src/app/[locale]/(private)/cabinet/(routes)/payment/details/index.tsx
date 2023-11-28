@@ -1,20 +1,21 @@
 'use client';
-import { FC, useState } from 'react';import React from 'react';
-import { PaymentDetails } from 'components/common/payment/PaymentDetails'; // Замените 'путь/к/вашему' на реальный путь
+import { FC, useState } from 'react';
+import React from 'react';
+import { PaymentDetails } from 'components/common/payment/PaymentDetails'; // Замініть 'путь/к/вашему' на реальний шлях
 
 export const PaymentDetail: FC = () => {
   const blocks = [
-    { title: 'Block 1', name: 'Value 1' },
-    { title: 'Block 2', name: 'Value 2' },
+    { title: 'Блок 1', name: 'Значення 1' },
+    { title: 'Блок 2', name: 'Значення 2' },
   ];
 
   const types = [
-    { title: 'Type 1', name: 'Value 1' },
-    { title: 'Type 2', name: 'Value 2' },
+    { title: 'Тип 1', name: 'Значення 1' },
+    { title: 'Тип 2', name: 'Значення 2' },
   ];
 
   return (
-      <PaymentDetails blocks={blocks} types={types} />
+    <PaymentDetails blocks={blocks} types={types} />
   );
 };
 
