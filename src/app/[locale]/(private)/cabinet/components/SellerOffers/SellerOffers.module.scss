@@ -1,0 +1,22 @@
+
+.card {
+    width: 50%;
+    height: 460px;
+    margin: 10px;
+}
+
+.card_review {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.container { 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 1rem;
+}
+
+.card_space {
+    display: flex; 
+    justify-content: space-between; 
+}
